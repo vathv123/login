@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>
+            This is basic HTML
+        </title>
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 550;
+            font-style: normal;
+        }
+        .container{
+            position: absolute;
+            top: 0px;
+        }
+        .shape{
+            background-color: rgba(244, 36, 116, 0.88);
+            width: 80px;
+            height: 12cm;
+            position: absolute;
+            margin-left: -1px;
+            border-radius: 0px 0px 5px 5px;
+            animation:  pull 1.8s ease-in, fade_in 5s forwards;
+        }
+        @keyframes fade_in{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes pull{
+            from{
+                height: 0;
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+                height: 12cm;
+            }
+        }
+        summary{
+            position: relative;
+            font-size: 15px;
+            width: 10px;
+            z-index: 5;
+            margin: 10px;
+            opacity: 1;
+            
+        }
+        summary > p:nth-child(1){
+            font-size: 23px;
+        }
+        summary > p:nth-child(2){
+            font-size: 14px;
+            margin-top: -8px;
+        }
+        details:nth-child(2){
+            margin-top: 100px;
+        }
+        details:nth-child(1){
+            width: 100%;
+            height: 120px;
+            position: absolute;
+        }
+        details:nth-child(1) > h1:nth-child(1){
+            margin-left: 325px;
+            width: 320px;
+            position: absolute;
+            top: 0px;
+            text-shadow: 0px 0px 2px white, 0px 0px 1px white, 0px 0px 2px white, 0px 0px 10px white;
+        }
+        details:nth-child(2) > summary{
+            animation: animation2 2s ease-in;
+        }
+        details:nth-child(3), details:nth-child(4), details:nth-child(5){
+            margin-top: 10px;
+        }
+        details:nth-child(3) > summary{
+            animation: animation3 2s ease-in, fade_in 0.01s ease-out 2s forwards;
+        }
+        details:nth-child(4) > summary{
+            animation: animation4 2s ease-in, fade_in 0.01s ease-out 3s forwards;
+        }
+        details:nth-child(5) > summary{
+            animation: animation3 2s ease-in, fade_in 0.01s ease-out 7s forwards;
+        }
+        @keyframes animation4{
+            0%{
+                margin-top: 50px;
+            }
+            100%{
+                margin-top: 0px;
+            }
+        }
+        @keyframes animation3{
+            0%{
+                margin-top: 30px;
+            }
+            100%{
+                margin-top: 0px;
+            }
+        }
+        @keyframes animation2{
+            0%{
+                margin-top: 150px;
+            }
+            100%{
+                margin-top: 0px;
+            }
+        }
+        ol > li{
+            width: 120px;
+            margin-left: 120px;
+            font-size: 19px;
+            margin-top: 20px;
+        }
+        ol > li:nth-child(21){
+            width: 320px;
+        }
+        dl > dd{
+            width: 520px;
+            margin-left: 120px;
+        }
+        @media(min-width: 1200px) {
+            details > h1:nth-child(1){
+                margin-left: 680px;
+            }
+        }
+        details > img{
+            position: absolute;
+            width: 420px;
+            margin-left: 260px;
+            margin-top: 350px;
+            border-bottom: 1px solid white;
+        }
+        @media(min-width: 1200px) {
+            details > img{
+                margin-left: 720px;
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="shape">
+                    <details>
+                        <h1>HTML TAGS</h1>
+                        <img src="https://th.bing.com/th/id/R.b9ffbbda3c77daefa8fc76b1d13f9903?rik=EDsAA8jLvU7LUA&pid=ImgRaw&r=0" alt="">
+                        <ol>
+                            <li>
+                                &lt; Strong &gt; 
+                            </li>
+                            <dl>
+                                <dd>
+                                    <Strong> 
+                                        This is 
+                                               <q>
+                                                   Bold
+                                               </q>
+                                        letters.
+                                    </Strong>
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; B &gt; 
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <b>
+                                                <q>
+                                                    Bold
+                                                </q>
+                                            </b>
+                                    letters.
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; U &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <u>
+                                                    Underline
+                                                </u>
+                                            </q>
+                                    letters.   
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; ins &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <ins>
+                                                    underline
+                                                </ins>
+                                            </q>
+                                    Letters.
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; I &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <i>
+                                                    italic
+                                                </i>
+                                            </q>
+                                    Letters.
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; Sub &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <sub>
+                                                    sub
+                                                </sub>
+                                            </q>
+                                    Letter.
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; sup &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <sup>
+                                                    sup
+                                                </sup>
+                                            </q>
+                                    Letters.
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; mark &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <mark>
+                                                    mark
+                                                </mark>
+                                            </q>
+                                    Letters.
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; del &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <del>
+                                                    del
+                                                </del>
+                                            </q>
+                                    Letters.
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; q &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <q>
+                                                <q>
+                                                    Quote
+                                                </q>
+                                            </q>
+                                    Letters.
+                                </dd>
+                            </dl>
+                            <li>
+                                details and summary
+                            </li>
+                            <dl>
+                                <dd>
+                                      <details>
+                                            Yes, you are.
+                                            <summary style="width: 220px">Example: Are you gay?</summary>
+                                      </details>
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; Hr &gt;
+                            </li>
+                            <dl>
+                                <dd>
+                                    This is 
+                                            <hr style="width: 320px;">
+                                </dd>
+                            </dl>
+                            <li>
+                                &lt; Br &gt;
+                            </li>
+                            <dl >
+                                <dd>
+                                    This is 
+                                            <q>Break <br>Line</q>
+                                </dd>
+                            </dl>
+                        </ol>
+                        <summary>
+                            <p id="first">First</p>
+                            <p id="firstlesson">Lesson</p>
+                        </summary>
+                    </details>
+                    <details>
+                        Not yet.
+                        <summary>
+                            <p>Second</p>
+                            <p>Lesson</p>
+                        </summary>
+                    </details>
+                    <details>
+                        Not yet.
+                        <summary>
+                            <p>Third</p>
+                            <p>Lesson</p>
+                        </summary>
+                    </details>
+                    <details>
+                        Not yet.
+                        <summary>
+                            <p>Fourth</p>
+                            <p>Lesson</p>
+                        </summary>
+                    </details>
+                    <details>
+                        Not yet.
+                        <summary>
+                            <p>Fifth</p>
+                            <p>Lesson</p>
+                        </summary>
+                    </details>
+            </div>
+        </div>
+    </body>
+</html>
