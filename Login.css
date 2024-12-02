@@ -33,7 +33,7 @@ form{
     line-height: 5px;
     position: relative;
     font-family: "Koulen", sans-serif;
-    gap: 25px;
+    gap: 15px;
 }
 i[class="fa-solid fa-user"],
 i[class="fa-solid fa-lock"]{
