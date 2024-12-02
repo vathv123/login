@@ -33,7 +33,7 @@ form{
     line-height: 5px;
     position: relative;
     font-family: "Koulen", sans-serif;
-    gap: 15px;
+    gap: 125px;
 }
 i[class="fa-solid fa-user"],
 i[class="fa-solid fa-lock"]{
@@ -50,7 +50,7 @@ span{
     z-index: -1;
     color: white;
     transform: scale(0.8);
-    margin: -25px 0px 0px -90px;
+    margin: 25px 0px 0px -90px;
     transition: 0.5s;
     animation: moveup 0.5s forwards;
 }
